@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'Discovery';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/fonts/DISCOVERY.ttf') format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #9b59b6;
+	--secondary-color: #8e44ad;
+	--primary-text-color: #bdc3c7;
+}
+
+body {
+	min-width: 100%;
+	min-height: 100vh;
+	padding: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #000;
+}
+
+button,
+input {
+	appearance: none;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	border-color: transparent;
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--primary-text-color);
+	border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: var(--primary-color);
+}
+
+.glass {
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	body {
+		background-size: 150%;
+		background-position: 50% 90%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
